@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question — Peduli Wanitamu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="page-question">
+
+  <!--bg-->
+  <div class="page-wrapper fade-in">
+
+    <div class="page-header">
+      <!--tombol kembali-->
+      <a href="index.html" class="btn-back">← Kembali</a>
+      <h1 class="page-title">💬 Question</h1>
+      <p class="page-subtitle">Make Your Special Person Happy ♥</p>
+    </div>
+
+    <!--chatarea===== -->
+    <div class="chat-box" id="chatBox">
+
+      <!--bot-->
+      <div class="chat-bubble bot">
+        <span class="avatar">💕</span>
+        <div class="bubble-text">
+          Haloo !! kami disini siap menerima keluh kesahmu tentang si 'dia'😳. Mari, sini ceritakan apa saja yang ingin kamu tanyakan tentang dia! ^v^
+        </div>
+      </div>
+
+    </div>
+
+    <!--input pesan-->
+    <div class="chat-input-area">
+      <input
+        type="text"
+        id="userInput"
+        class="chat-input"
+        placeholder="Ketik pertanyaan atau curhatanmu di sini..."
+      />
+      <!--tombol kirim -->
+      <button class="btn-send" onclick="sendMessage()">Kirim ➤</button>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

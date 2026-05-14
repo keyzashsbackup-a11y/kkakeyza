@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Location of Happiness — Peduli Wanitamu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="page-location">
+
+  <div class="page-wrapper fade-in">
+
+    <div class="page-header">
+      <a href="index.html" class="btn-back">← Kembali</a>
+      <h1 class="page-title">📍 Location of Happiness</h1>
+      <p class="page-subtitle">Temukan tempat seru di sekitar lokasimu</p>
+    </div>
+
+    <!--input lokasi===== -->
+    <div class="budget-form">
+      <label class="input-label">Masukkan Lokasi Kamu:</label>
+
+      <div class="input-row">
+        <input
+          type="text"
+          id="locationInput"
+          class="budget-input"
+          placeholder="Contoh: Banjar, Jawa Barat"
+        />
+        <!--tombol cari tempat -->
+        <button class="btn-primary" onclick="getLocations()">Cari </button>
+      </div>
+
+      <!--otomatis browser-->
+      <button class="btn-outline" onclick="useMyLocation()"> Gunakan Lokasi Saya</button>
+    </div>
+
+    <div id="locationResult" class="result-area"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

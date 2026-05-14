@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun Activities — Peduli Wanitamu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="page-activities">
+
+  <div class="page-wrapper fade-in">
+
+    <div class="page-header">
+      <a href="index.html" class="btn-back">← Kembali</a>
+      <h1 class="page-title">🎀 Fun Activities</h1>
+      <p class="page-subtitle">Rekomendasi aktivitas sesuai budget kamu</p>
+    </div>
+
+    <!--input budget===== -->
+    <div class="budget-form">
+      <label class="input-label">Masukkan Budget Kamu (Rp):</label>
+      <div class="input-row">
+        <input
+          type="number"
+          id="budgetInput"
+          class="budget-input"
+          placeholder="Contoh: 75000"
+          min="0"
+        />
+        <!--tombol cari-->
+        <button class="btn-primary" onclick="getActivities()">Cari </button>
+      </div>
+
+      <!--pilihan -->
+      <div class="quick-budget">
+        <span class="quick-label">Pilih cepat:</span>
+        <button class="chip" onclick="setBudget(50000)">Rp 50.000</button>
+        <button class="chip" onclick="setBudget(100000)">Rp 100.000</button>
+        <button class="chip" onclick="setBudget(200000)">Rp 200.000</button>
+        <button class="chip" onclick="setBudget(300000)">Rp 300.000</button>
+      </div>
+    </div>
+
+    <div id="activityResult" class="result-area"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
